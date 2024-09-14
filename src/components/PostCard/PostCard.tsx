@@ -1,10 +1,12 @@
+import Image from "next/image"
+
  export const PostCard = () => {
    return (
      <div>
          <div className="flex">
                 <div className="max-w-sm rounded shadow-lg bg-white m-4">
                     {/* Post Image */}
-                    <img
+                    <Image
                         className="w-full"
                         src="https://via.placeholder.com/400x200"
                         alt="Post Image"
