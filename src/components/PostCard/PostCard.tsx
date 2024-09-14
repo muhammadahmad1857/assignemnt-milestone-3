@@ -10,6 +10,8 @@ import Image from "next/image"
                         className="w-full"
                         src="https://via.placeholder.com/400x200"
                         alt="Post Image"
+                        width={500}
+                        height={500}
                     />
 
                     {/* Post Content */}
