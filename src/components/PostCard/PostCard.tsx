@@ -19,7 +19,11 @@ export const PostCard = (props: any) => {
 
           {/* Post Content */}
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 text-black"> {postData.title} </div>
+            {/* Post Title */}
+            <div className="font-bold text-xl mb-2 text-black">
+              {postData.title}
+            </div>
+            {/* Post Body */}
             <p className="text-gray-700 text-base">{postData.body}</p>
           </div>
         </div>
