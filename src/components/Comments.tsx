@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
+
+import { Avatar } from "@nextui-org/avatar";
 
 export default function Comments({ commentData }: any) {
   return (

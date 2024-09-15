@@ -9,7 +9,9 @@ interface Post {
   body: string;
 }
 
-export default function BlogId({ params }: any) {
+export default function BlogId({ params }:{params:{blogId:string}}) {
+  console.log(params);
+  
   const [postData, setPostData] = useState<Post | null>(null);
 
   const [comments, setComments] = useState([]);

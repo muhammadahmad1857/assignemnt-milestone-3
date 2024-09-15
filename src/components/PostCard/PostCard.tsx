@@ -1,6 +1,16 @@
-import Image from "next/image";
-import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
-export const PostCard = (props: any) => {
+import { Avatar } from "@nextui-org/avatar";
+
+interface PropsType {
+  postData: {
+    body: string;
+    id: number;
+    title: string;
+    userId: number;
+  };
+}
+export const PostCard = (props: PropsType) => {
+  console.log(props);
+
   const { postData } = props;
   console.log(`postData ${postData}`);
 
@@ -9,8 +19,8 @@ export const PostCard = (props: any) => {
       <div className="flex">
         <div className="max-w-sm rounded shadow-lg bg-white m-4">
           {/* Post Image */}
-          <div className="align-top">
-            <Avatar src={`https://i.pravatar.cc/150?u=${postData.id}`} size="sm" />
+          <div>
+            <Avatar src={`https://i.pravatar.cc/150?u=${postData.id}`} />
             {/* <Avatar className="text-xl font-bold" name={postData.name} /> */}
           </div>
 
@@ -28,4 +38,3 @@ export const PostCard = (props: any) => {
     </div>
   );
 };
-

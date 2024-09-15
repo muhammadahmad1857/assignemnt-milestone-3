@@ -17,7 +17,7 @@ export default function Blog() {
   console.log(PostData);
 
   return (
-    <div className="flex flex-wrap items-center justify-center">
+    <div className="md:grid grid-cols-3 w-full">
       {PostData.map((item: any) => {
         return (
           <Link href={`/Blog/${item.id}`}>
