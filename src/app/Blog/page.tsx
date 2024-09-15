@@ -1,5 +1,5 @@
 "use client";
-import { PostCard } from "@/components/PostCard/PostCard";
+import { PostCard } from "@/components/PostCard/PostCard"
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 

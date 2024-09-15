@@ -77,7 +77,7 @@ const TopNav: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/h2bout"
+              href="/Blog"
               className="block text-gray-300 hover:text-white"
             >
               Blog
