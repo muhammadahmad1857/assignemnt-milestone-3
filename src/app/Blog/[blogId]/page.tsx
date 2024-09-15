@@ -2,6 +2,7 @@
 import Comments from "@/components/Comments";
 import React, { useEffect, useState } from "react";
 
+// interface for post
 interface Post {
   userId: number;
   id: number;
@@ -9,9 +10,9 @@ interface Post {
   body: string;
 }
 
-export default function BlogId({ params }:{params:{blogId:string}}) {
-  console.log(params);
-  
+export default function BlogId({ params }: { params: { blogId: string } }) {
+
+
   const [postData, setPostData] = useState<Post | null>(null);
 
   const [comments, setComments] = useState([]);
@@ -44,9 +45,10 @@ export default function BlogId({ params }:{params:{blogId:string}}) {
         <p className=" text-base">{(postData || {}).body}</p>
 
         {/* Comments Section */}
-        {comments && comments.map((com) => {
-          return <Comments  commentData={com}/>;
-        })}
+        {comments &&
+          comments.map((com, index) => {
+            return <Comments commentData={com} key={index} />;
+          })}
       </div>
     </div>
   );

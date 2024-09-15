@@ -2,19 +2,18 @@ import React from "react";
 
 import { Avatar } from "@nextui-org/avatar";
 
-interface CommentDataType{
-  body: string;
-  email: string;
-  id: number;
-  name: string;
-  postId: number;
- 
-
+// interface for commentData
+interface CommentDataType {
+  commentData: {
+    body: string;
+    email: string;
+    id: number;
+    name: string;
+    postId: number;
+  };
 }
 
-export default function Comments({commentData}:{commentData:CommentDataType}) {
-  console.log(commentData);
-
+export default function Comments({ commentData }: CommentDataType) {
   return (
     <div>
       <div className=" bg-gray-100 p-8">

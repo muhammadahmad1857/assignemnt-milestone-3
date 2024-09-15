@@ -3,6 +3,13 @@ import { PostCard } from "@/components/PostCard/PostCard";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
+interface PostDataType {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
 export default function Blog() {
   const [PostData, setPostData] = useState([]);
 
@@ -18,9 +25,9 @@ export default function Blog() {
 
   return (
     <div className="md:grid grid-cols-3 w-full">
-      {PostData.map((item: any) => {
+      {PostData.map((item: PostDataType, index) => {
         return (
-          <Link href={`/Blog/${item.id}`}>
+          <Link key={index} href={`/Blog/${item.id}`}>
             <PostCard postData={item} />
           </Link>
         );
