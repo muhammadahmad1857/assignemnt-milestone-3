@@ -12,16 +12,14 @@ export const PostCard = (props: PropsType) => {
   console.log(props);
 
   const { postData } = props;
-  console.log(`postData ${postData}`);
 
   return (
     <div>
       <div className="flex">
-        <div className="max-w-sm rounded shadow-lg bg-white m-4">
+        <div className="max-w-sm rounded shadow-lg shadow-gray-700 bg-white m-4 hover:mt-2">
           {/* Post Image */}
           <div>
             <Avatar src={`https://i.pravatar.cc/150?u=${postData.id}`} />
-            {/* <Avatar className="text-xl font-bold" name={postData.name} /> */}
           </div>
 
           {/* Post Content */}

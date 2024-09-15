@@ -1,5 +1,5 @@
 "use client";
-import { PostCard } from "@/components/PostCard/PostCard"
+import { PostCard } from "@/components/PostCard/PostCard";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -21,7 +21,6 @@ export default function Blog() {
     const data = await response.json();
     setPostData(data);
   };
-  console.log(PostData);
 
   return (
     <div className="md:grid grid-cols-3 w-full">
