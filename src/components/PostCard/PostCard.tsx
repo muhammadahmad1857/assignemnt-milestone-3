@@ -29,10 +29,3 @@ export const PostCard = (props: any) => {
   );
 };
 
-// <Image
-//   className="w-full"
-//   src="https://via.placeholder.com/400x200"
-//   alt="Post Image"
-//   width={500}
-//   height={500}
-// />;

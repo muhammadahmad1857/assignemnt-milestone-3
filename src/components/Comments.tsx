@@ -26,11 +26,3 @@ export default function Comments({ commentData }: any) {
     </div>
   );
 }
-
-// <Image
-//                 className="w-10 h-10 rounded-full"
-//                 src={`https://ui-avatars.com/api/?name=${commentData.name}&background=random`}
-//                 alt={commentData.name}
-//                 width={100}
-//                 height={100}
-//               />
